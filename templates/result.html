@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block  content %}
-    <h1>ROCK, PAPER, SCISSORS</h1>
+    <h1>Game Result</h1>
     
     
 
-    <p>
-        
-        Result:  {{ result }}</p>
+    <p> {{player1}} : {{ player1_choice}}
+        <br/>
+        {{ player2}} : {{ player2_choice}}
+        <br/>
+        {{ result }}
+    </p>
     
 {%endblock%}
