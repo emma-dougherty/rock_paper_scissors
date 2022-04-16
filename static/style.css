@@ -1,0 +1,106 @@
+/* @import url(https://fonts.googleapis.com/css?family=Bungee+Shade&); */
+
+
+body {
+    background-color: #66aeff;
+    
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 70px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 30px; */
+    margin-top: 100px;
+    /* padding-left: 200px;
+    padding-right: 500px; */
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.play{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 50px;
+    color: rgb(255, 127, 81);
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 10px;
+    padding-left: 250px;
+    padding-right: 300px; */
+}
+
+a:link, a:visited {
+    color: rgb(237, 12, 12);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    color: rgb(237, 222, 0);
+}
+
+.rules{
+    display: flex;
+    justify-content: center;
+    font-family: 'Anton', cursive;
+    font-size: 20px;
+}
+
+.game-play{
+    display: flex;
+    justify-content: center;
+}
+
+/* .css-input {
+    padding: 50x;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: -14px 15px 0px rgba(0,0,0,.81);
+    text-shadow: 0px 0px 0px rgba(66,66,66,.75);
+}
+.css-input:focus {
+    outline:none;
+} */
+
+/* .result{
+    font-family: 'Anton', cursive;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+
+
+
+
+
+
+
+/* p {
+    font-family: 'Kaushan Script', cursive;
+} */

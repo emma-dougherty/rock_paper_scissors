@@ -1,15 +1,18 @@
 {% extends "base.html" %}
 
 {% block  content %}
-    <h1>Game Result</h1>
     
     
+    
+    <div class="result">
+    <p>
+        Player 1: {{player1}} : {{ player1_choice}}
+        <br/>
+        Player 2: {{ player2}} : {{ player2_choice}}
+        <br/>
 
-    <p> {{player1}} : {{ player1_choice}}
-        <br/>
-        {{ player2}} : {{ player2_choice}}
-        <br/>
+    <h2>And the winner is...</h2>
         {{ result }}
     </p>
-    
+    </div>
 {%endblock%}
