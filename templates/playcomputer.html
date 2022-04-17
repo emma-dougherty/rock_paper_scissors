@@ -2,30 +2,36 @@
 
 {% block  content %}
 
-<p>
-    Rock wins against scissors; paper wins against rock; and scissors wins against paper
-</p>
+    <div class="rules">
+        <p>
+            <b>Rock</b> wins against scissors
+        <br/>
+            <b>Paper</b> wins against rock
+        <br/>
+            <b>Scissors</b> wins against paper
+        </p>
+        
+    </div>
 
-<div class="game-play">
+    <h2>Can you beat the Computer?</h2>
 
-    <form class="form-inline" action="/<player1_choice>/<player2_choice>" method="post">
+    <div class="form">
+        <form class="form-inline" action="/<player_choice>/<computer_choice>" method="post">
 
-        <label for="name1">Your name</label>
-        <input type="text" class="css-input" name="name1" id="name1">
+        <label for="name">Your name</label>
+        <input type="text" class="css-input" name="name" id="name">
 
-        <label for="choice1">CHOOSE:</label>
-        <select name="choice1" id="choice1">
+        <label for="choice">CHOOSE:</label>
+        <div class="select">
+        <select name="choice" id="choice">
             <option value="rock">rock</option>
             <option value="paper">paper</option>
             <option value="scissors">scissors</option>
         </select>
-    
-
-        <input type="submit" value="GO">
-    </form> 
-
-</div>
-
-    
+        
+            <input type="submit" value="GO">
+        </div>
+        </form> 
+    </div>
 
 {%endblock%}

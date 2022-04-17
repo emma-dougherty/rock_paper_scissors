@@ -1,19 +1,25 @@
+<!-- This works with controller endpoint '/<player1_choice>/<player2_choice>' -->
+
+
 {% extends "base.html" %}
 
 {% block  content %}
 
 <div class="rules">
-<p>
-    Rock wins against scissors; paper wins against rock; and scissors wins against paper
-</p>
+    <p>
+        <b>Rock</b> wins against scissors
+        <br/>
+        <b>Paper</b> wins against rock
+        <br/>
+        <b>Scissors</b> wins against paper
+    </p>
 </div>
-<div class="game-play">
 
+<div class="form">
     <form class="form-inline" action="/<player1_choice>/<player2_choice>" method="post">
 
         <label for="name1">PLAYER 1</label>
         <input type="text" class="css-input" name="name1" id="name1">
-
         <label for="choice1">CHOICE:</label>
         <select name="choice1" id="choice1">
             <option value="rock">rock</option>
@@ -24,19 +30,15 @@
         <form class="form-inline" action="/<player1_choice>/<player2_choice>" method="post">
             <label for="name2">PLAYER 2</label>
             <input type="text" class="css-input" name="name2" id="name2">
-        
-        <label for="choice2">CHOICE:</label>         
+            <label for="choice2">CHOICE:</label>         
         <select name="choice2" id="choice2">
             <option value="rock">rock</option>
             <option value="paper">paper</option>
             <option value="scissors">scissors</option>
         </select>
-
         <input type="submit" value="GO">
     </form> 
 
 </div>
-
-    
 
 {%endblock%}

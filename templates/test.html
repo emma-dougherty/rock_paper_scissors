@@ -1,0 +1,32 @@
+<div class="parallax"></div>
+
+
+    {% extends "base.html" %}
+
+    {% block  content %}
+
+<div class="curtain">
+    <div class="invert">
+
+    <div class="parallax_layer parallax_layer--base">
+            <img src="{{ url_for('static', filename = 'rock-paper-scissors-3.png') }}"> 
+    </div>
+
+    <div class="parallax_layer parallax_layer--back">
+        <img src="{{ url_for('static', filename = 'rock-paper-scissors-2.png') }}">
+    </div>
+
+    <div class="parallax_layer parallax_layer--deep">
+        <img src="{{ url_for('static', filename = 'rock-paper-scissors-1.png') }}">
+            
+    </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+{%endblock%}

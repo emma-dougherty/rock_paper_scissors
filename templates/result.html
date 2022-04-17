@@ -2,17 +2,16 @@
 
 {% block  content %}
     
-    
-    
-    <div class="result">
-    <p>
-        Player 1: {{player1}} : {{ player1_choice}}
-        <br/>
-        Player 2: {{ player2}} : {{ player2_choice}}
-        <br/>
-
-    <h2>And the winner is...</h2>
-        {{ result }}
-    </p>
+    <div class="choices">
+        
+            {{player1}} : {{ player1_choice}}
+            <br/>
+            {{ player2}} : {{ player2_choice}}
+            </div>
+            <br/><br/>
+            <div class="result">
+            {{ result }}
+        </p>
     </div>
+
 {%endblock%}

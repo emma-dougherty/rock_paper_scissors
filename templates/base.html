@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,14 +8,14 @@
         <title>{{ title }} Rock, Paper, Scissors</title>
     </head>
     <body>
-        <div class="header">
-        <h1>Rock, Paper, Scissors</h1>
-    </div>
-        <div class="menu play">
-        <ul>
-            <li><a href="/">PLAY!</a></li>
-        </ul>
-    </div>
+        <div class="title">
+            <img src="{{ url_for('static', filename = 'rps-hd2.png') }}"> 
+        </div>
+            <div class="menu-play">
+                <ul>
+                    <li><a href="/play">PLAY!</a></li>
+                </ul>
+            </div>
         {% block content %}
 
         {% endblock %}

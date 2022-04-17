@@ -1,28 +1,37 @@
-/* @import url(https://fonts.googleapis.com/css?family=Bungee+Shade&); */
-
-
 body {
-    background-color: #66aeff;
-    
+    background-image: url(../static/rps-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 h1 {
     font-family: 'Bungee Shade', cursive;
-    font-size: 70px;
+    font-size: 120px;
     color: black;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 20px;
+}
 
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Antonio', sans-serif;
+    font-size: 30px;
+    color: black;
 }
 
 .header{
     display: flex;
     justify-content: center;
-    /* margin-left: 30px; */
-    margin-top: 100px;
-    /* padding-left: 200px;
-    padding-right: 500px; */
 }
 
 ul {
@@ -31,76 +40,161 @@ ul {
     margin: 0;
 }
 
-.play{
+.menu-play{
     font-family: 'Bungee Shade', cursive;
     font-size: 50px;
-    color: rgb(255, 127, 81);
+    color: #f53939;
     text-decoration: none;
     list-style-type: none;
     display: flex;
     justify-content: center;
-    /* margin-left: 10px;
-    padding-left: 250px;
-    padding-right: 300px; */
 }
 
 a:link, a:visited {
-    color: rgb(237, 12, 12);
+    color: #f53939;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
 
 a:hover, a:active {
-    color: rgb(237, 222, 0);
+    color: #ffffff;
 }
 
-.rules{
+.Parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.child1 {
+    width: 50%;
+    height: 100vh;
+    text-align: right;
+    padding-left: 100px
+}
+
+.child2 {
+    width: 50%;
+    height: 100vh;
+}
+
+.rules {
     display: flex;
     justify-content: center;
-    font-family: 'Anton', cursive;
+    font-family: 'Antonio Thin 100', sans-serif;
+    font-size: 25px;
+    
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    font-family: 'Antonio Thin 100', sans-serif;
     font-size: 20px;
 }
-
-.game-play{
+.choices {
+    font-family: 'Antonio Thin 100', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
 }
 
-/* .css-input {
-    padding: 50x;
+.result {
+    font-family: 'Anton', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.css-input {
+    padding: 30x;
     font-size: 28px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    border-width: 1px;
-    border-color: #CCCCCC;
+    font-family: 'Antonio Thin 100', sans-serif;
+    border-width: 3px;
+    border-color: #000000;
     background-color: #FFFFFF;
     color: #000000;
     border-style: solid;
-    border-radius: 0px;
-    box-shadow: -14px 15px 0px rgba(0,0,0,.81);
-    text-shadow: 0px 0px 0px rgba(66,66,66,.75);
+    border-radius: 5px;
+    box-shadow: -10px 15px 0px rgba(0,0,0,.81);
 }
-.css-input:focus {
-    outline:none;
-} */
 
-/* .result{
-    font-family: 'Anton', cursive;
-    font-size: 10px;
+label {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.select {
+    position: relative;
+    display: inline;
+    margin-bottom: 15px;
+    width: 100%;
+}    .select select {
+        font-family: 'Antonio Thin 100', sans-serif;
+        font-size: 28px;
+        padding: 5px 5px;
+        border: 4px solid #000000;
+        border-radius: 5px;
+        box-shadow: -10px 15px 0px rgba(0,0,0,.81);
+        background: #ffffff;
+        color: #000000;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            color: #000000;
+            background: #ffeea0;
+        }
+        .select select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+input[type=submit] {
+    background-color:#ff5454;
+	border-radius:42px;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Verdana;
+	font-size:26px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+
+
+/* #mouse-scroll {
     display: flex;
     justify-content: center;
+    margin-left: 200px;
 } */
 
+/* :root {
+    --minh: 100vh;
+    --color2: #ffe506;
+    --color1: #0091ff;
+}
 
+.curtain {
 
+background-image: linear-gradient(to bottom, var(--color2) 50%, var(--color1) 50%);
+}
 
+.curtain::after {
+    content: "";
+    display: block;
+    min-height: var(--minh);
+}
 
-
-
-
-
-
-/* p {
-    font-family: 'Kaushan Script', cursive;
+.invert {
+    position: sticky;
+    display: flex;
+    top: 100px;
+    mix-blend-mode: add;
+    min-height: var(--minh);
 } */
