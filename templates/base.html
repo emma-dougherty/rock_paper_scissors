@@ -4,10 +4,11 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Bungee+Shade&" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Shade&" rel="stylesheet">
         <title>{{ title }} Rock, Paper, Scissors</title>
     </head>
     <body>
+        
         <div class="title">
             <img src="{{ url_for('static', filename = 'rps-hd2.png') }}"> 
         </div>
@@ -19,5 +20,6 @@
         {% block content %}
 
         {% endblock %}
+   
     </body>
 </html>

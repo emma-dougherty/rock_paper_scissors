@@ -41,4 +41,3 @@ def play_computer(player_choice, computer_choice):
     result = Game.play_computer(player1, player2)
     return render_template('result.html', title='Result', player1=player_name, player2="Computer", player1_choice=player_choice, player2_choice=computer_choice, result=result)
 
-
